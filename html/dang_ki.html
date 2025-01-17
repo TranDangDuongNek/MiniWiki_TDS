@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TẠO TÀI KHOẢN</title>
+    <link rel="stylesheet" href="../css/chinh_sua_DK_DN.css">
+
+</head>
+<body>    
+    <div class="dang_ki">
+        <h1>Đăng Ký</h1>
+
+        <form >
+            <label for="ten_nguoi_dung">TÊN NGƯỜI DÙNG:</label>
+            <input type="text" id="ten_nguoi_dung" name="ten_nguoi_dung" required><br>
+
+            <label for="email">EMAIL:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="password">MẬT KHẨU:</label>
+            <input type="password" id="password" name="password" required><br>
+
+            <label for="xac_nhan_password">XÁC NHẬN MẬT KHẨU:</label>
+            <input type="password" id="xac_nhan_password" name="xac_nhan_password" required><br>
+
+            <input type="submit" id="register-btn" value="Đăng Ký">
+        </form>
+
+        <p id="error_message"></p>
+
+        <p>Đã có tài khoản? <a href="login.html">Đăng Nhập</a></p>
+    </div>
+    <script src="../js/register.js"></script>
+</body>
+</html>
