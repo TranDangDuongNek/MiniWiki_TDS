@@ -42,7 +42,7 @@ img {
         
         
         h1{
-            font-size: 50px;          
+            font-size: 55px;          
             color: #000000;              
             text-align: center;
         }
@@ -58,30 +58,33 @@ img {
         }
         
         .nut_an {
-            position: center;
-            list-style: none;
-            display: flex;
-            gap: 50px;
-            height: 100%;
-            align-items: center;
-          
-            li {
-              padding: 5px 7px;
+        
+          position: center;
+          list-style: none;
+          display: flex;
+          gap: 170px;
+          height: 100%;
+          align-items: center;
+          background: rgba(6, 99, 187, 0.534);
+          padding: 400px;
+        
+          li {
+            padding: 5px 7px;
+            display: block;
+        
+            a {
               display: block;
-          
-              a {
-                display: block;
-                text-decoration: none;
-                text-transform: uppercase;
-                color: rgb(42, 65, 165);
-                font-weight: 700;
-                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-          
-          
-              }
+              text-decoration: none;
+              text-transform: uppercase;
+              color: rgb(255, 255, 255);
+              font-weight: 700;
+              font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        
+        
             }
           }
-          .nut_an li a:hover{
-            border-bottom: 2px solid rgb(26, 152, 168);
-            color:rgb(0, 255, 0);
-          }
+        }
+        .nut_an li a:hover{
+          border-bottom: 2px solid rgb(26, 152, 168);
+          color:rgb(141, 141, 141);
+        }

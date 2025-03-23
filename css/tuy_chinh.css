@@ -1,85 +1,118 @@
-/* --text: #fffafa;
---background: #1f2323;
---primary: #0533ff;
---secondary: #3363ff;
---accent: #3e37be; */
 body {
   padding: 0;
-  margin: 0 auto;
-  background-color: #333;
-
-  background-size: cover; /* Tự động điều chỉnh kích thước hình nền */
-  background-repeat: no-repeat; /* Không lặp lại hình nền */
-  background-position: center top ; /* Căn giữa hình nền */
-}
-.gioi_thieu {
-  font-size: 20px;          
-  color: #333;              
-  text-align: center;
-
-}
-
-  nav {
-
-    width: 100%;
-    height: 120px;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-nav .ben-phai #nut-dang-nhap {
-  color: rgb(10, 9, 10);
-  font-weight: 700;
+  margin: 0;
+  background-color: #e6f0ff;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  border: none;
-  outline: none;
-  padding: 10px 15px;
-  border-radius: 8px;
-  background-color: rgba(255, 255, 255, 0);
-  cursor: pointer;
-
-
-}
-nav .ben-phai #nut-dang-nhap:hover{
-  border-bottom: 2px solid rgb(1, 6, 7);
-  color:rgb(134, 134, 134);
-
 }
 
-
-
-.nut_an {
-
-  position: center;
-  list-style: none;
+nav {
+  background: #4D55CC;
   display: flex;
-  gap: 60px;
-  height: 100%;
+  justify-content: space-between;
+  padding: 10px 20px;
   align-items: center;
-  background: rgba(6, 99, 187, 0.534);
-  padding: 350px;
-  border-radius: 20px;
-  box-shadow: 2px 3px 10px rgba(105, 162, 236, 0.925);
-
-  li {
-    padding: 5px 7px;
-    display: block;
-
-    a {
-      display: block;
-      text-decoration: none;
-      text-transform: uppercase;
-      color: rgb(255, 255, 255);
-      font-weight: 700;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-
-
-    }
-  }
 }
-.nut_an li a:hover{
-  border-bottom: 2px solid rgb(26, 152, 168);
-  color:rgb(141, 141, 141);
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
 }
+
+.menu li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+#login-button {
+  background-color: #7A73D1;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.hero {
+  text-align: center;
+  padding: 50px;
+  background: linear-gradient(to right, #211C84, #4D55CC);
+  color: white;
+}
+
+section {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  background: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* NAVIGATION BAR */
+nav {
+  width: 100%;
+  height: 80px; /* Tăng chiều cao */
+  background-color: #4D55CC; /* Màu nền */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Đưa nút đăng nhập ra ngoài cùng */
+  padding: 0 30px; /* Tăng padding để không bị dính vào mép */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+/* ---------------------------------------------------------------------- */
+/* Menu danh sách */
+.nut_an {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto; /* Canh giữa menu */
+}
+
+/* Các mục menu */
+.nut_an li {
+  margin: 0 20px; /* Giãn cách đều */
+}
+
+/* Các liên kết */
+.nut_an a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px; /* Tăng size chữ */
+  padding: 12px 18px; /* Tăng kích thước vùng bấm */
+  transition: color 0.3s ease-in-out;
+}
+
+.nut_an a:hover {
+  color: #B5A8D5; /* Hiệu ứng hover */
+}
+
+/* Nút đăng nhập */
+.ben-phai {
+  margin-left: auto; /* Đẩy nút đăng nhập ra ngoài cùng */
+}
+
+#nut-dang-nhap {
+  background-color: #B5A8D5;
+  color: white;
+  border: none;
+  padding: 12px 20px; /* Tăng kích thước */
+  border-radius: 5px;
+  font-size: 16px; /* Tăng size chữ */
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.1s;
+}
+
+#nut-dang-nhap:hover {
+  background-color: #7A73D1;
+  transform: scale(1.05);
+}
+
+#nut-dang-nhap:active {
+  transform: scale(0.95);
+}
+/* ---------------------------------------------------------------------------------- */
 
