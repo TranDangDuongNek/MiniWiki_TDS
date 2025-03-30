@@ -3,7 +3,8 @@ const enemyData = [
     { name: "Quái bay", counter: ["Lính đánh trên trời"] },
     { name: "Quái tàng hình", counter: ["Lính đánh tàng hình"] },
     { name: "Quái giáp (Tank)", counter: ["Lính đánh xuyên giáp"] },
-    { name: "Quái gây choáng", counter: ["Lính khống chế"] },
+    { name: "Quái chạy nhanh", counter: ["Lính khống chế"] },
+    { name: "Quái gây choáng", counter: ["Lính hỗ trợ"] },
     { name: "BOSS", counter: ["Lính đánh trên trời", "Lính đánh xuyên giáp", "Lính khống chế"] } // Boss cần nhiều loại khắc chế
 ];
 
@@ -11,7 +12,8 @@ const towers = [
     "Lính đánh trên trời",
     "Lính đánh tàng hình",
     "Lính đánh xuyên giáp",
-    "Lính khống chế"
+    "Lính khống chế",
+    "Lính hỗ trợ"
 ];
 
 // Biến lưu số lần thắng liên tiếp
