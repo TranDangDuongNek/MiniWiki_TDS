@@ -1,19 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Bài Đăng Của Bạn</title>
-    <link rel="stylesheet" href="../css/trang_check.css">
+    <title>Danh sách Tower - TDS Wiki</title>
+    <link rel="stylesheet" href="../css/tower.css">
 </head>
 <body>
-    <ul class="nut_an">
-        <ul class="nut_an">
+    <!-- Thanh điều hướng -->
+    <nav>
+        <ul class="menu">
             <li><a href="../index.html">HOME</a></li>
-            <li><a href="../html/video.html">VIDEO</a></li>    
+            <li><a href="../html/video.html">VIDEO</a></li>
             <li><a href="../html/event.html">EVENT</a></li>
             <li><a href="../html/tower.html">TOWER</a></li>
-            <li><a href="../html/item.html">ITEM</a></li>  
+            <div class="ben-phai">
+                <button type="button" id="nut-dang-nhap">Đăng Nhập</button>
+            </div>  
         </ul>
+    </nav>
+
+    <header>
+        <h1>Danh Sách Tower</h1>
+    </header>
+
+    <!-- Danh sách Tower -->
+    <section class="tower-list">
+        <div class="tower-category">
+            <h2>Lính đánh trên trời</h2>
+            <div class="tower-card">Pursuit</div>
+            <div class="tower-card">Turret</div>
+        </div>
+
+        <div class="tower-category">
+            <h2>Lính đánh tàng hình</h2>
+            <div class="tower-card">Ace Pilot</div>
+            <div class="tower-card">Golden Scout</div>
+        </div>
+
+        <div class="tower-category">
+            <h2>Lính đánh xuyên giáp</h2>
+            <div class="tower-card">Accelerator</div>
+            <div class="tower-card">Hunter</div>
+        </div>
+
+        <div class="tower-category">
+            <h2>Lính khống chế</h2>
+            <div class="tower-card">Freezer</div>
+            <div class="tower-card">Electroshocker</div>
+        </div>
+
+        <div class="tower-category">
+            <h2>Lính hỗ trợ</h2>
+            <div class="tower-card">DJ Booth</div>
+            <div class="tower-card">Commander</div>
+        </div>
+    </section>
+
+    <!-- Mini-game "Tìm thẻ bài tương ứng" -->
+    <section class="minigame">
+        <h2>Mini-game: Tìm thẻ bài khắc chế</h2>
+        <p>Chọn một Tower để khắc chế quái vật xuất hiện!</p>
+        <div id="enemy-container">
+            <span id="enemy-name">Quái vật sẽ xuất hiện tại đây...</span>
+        </div>
+        <div id="tower-options">
+            <button class="tower-btn">Pursuit</button>
+            <button class="tower-btn">Golden Scout</button>
+            <button class="tower-btn">Accelerator</button>
+            <button class="tower-btn">Freezer</button>
+            <button class="tower-btn">DJ Booth</button>
+        </div>
+        <p id="game-result"></p>
+    </section>
+
+    <script src="../js/tower.js"></script>
 </body>
 </html>
