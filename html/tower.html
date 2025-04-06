@@ -1,75 +1,83 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Danh sách Tower - TDS Wiki</title>
-    <link rel="stylesheet" href="../css/tower.css">
+  <meta charset="UTF-8">
+  <title>Trang Tower</title>
+  <link rel="stylesheet" href="../css/tower.css">
 </head>
 <body>
-    <!-- Thanh điều hướng -->
     <nav>
-        <ul class="menu">
-            <li><a href="../index.html">HOME</a></li>
-            <li><a href="../html/video.html">VIDEO</a></li>
-            <li><a href="../html/event.html">EVENT</a></li>
-            <li><a href="../html/tower.html">TOWER</a></li>
-            <div class="ben-phai">
-                <button type="button" id="nut-dang-nhap">Đăng Nhập</button>
-            </div>  
-        </ul>
-    </nav>
+        <ul class="nut_an">
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="../html/video.html">VIDEO</a></li>    
+        <li><a href="../html/event.html">EVENT</a></li>
+        <li><a href="../html/tower.html">TOWER</a></li>
+        <div class="ben-phai">
+            <button type="button" id="nut-dang-nhap">Đăng Nhập</button>
+        </div>  
+    
+        </nav> 
 
-    <header>
-        <h1>Danh Sách Tower</h1>
-    </header>
+  <div class="container">
+    <h1>Các Loại Tower</h1>
 
-    <!-- Danh sách Tower -->
-    <section class="tower-list">
-        <div class="tower-category">
-            <h2>Lính đánh trên trời</h2>
-            <div class="tower-card">Pursuit</div>
-            <div class="tower-card">Turret</div>
-        </div>
-
-        <div class="tower-category">
-            <h2>Lính đánh tàng hình</h2>
-            <div class="tower-card">Ace Pilot</div>
-            <div class="tower-card">Golden Scout</div>
-        </div>
-
-        <div class="tower-category">
-            <h2>Lính đánh xuyên giáp</h2>
-            <div class="tower-card">Accelerator</div>
-            <div class="tower-card">Hunter</div>
-        </div>
-
-        <div class="tower-category">
-            <h2>Lính khống chế</h2>
-            <div class="tower-card">Freezer</div>
-            <div class="tower-card">Electroshocker</div>
-        </div>
-
-        <div class="tower-category">
-            <h2>Lính hỗ trợ</h2>
-            <div class="tower-card">DJ Booth</div>
-            <div class="tower-card">Commander</div>
-            <div class="tower-card">Medic</div>
-        </div>
+    <section class="tower-category">
+      <h2>Lính Đánh Trên Trời</h2>
+      <div class="tower-grid">
+        <div><img src="../img/Pursuit.png"><p>Pursuit</p></div>
+        <div><img src="../img/Ace Pilot.png"><p>Ace Pilot</p></div>
+        <div><img src="../img/Militant.png"><p>Militant</p></div>        
+      </div>
     </section>
 
-    <!-- Mini-game "Tìm thẻ bài tương ứng" -->
-    <section class="minigame">
-        <h2>Mini-game: Tìm thẻ bài khắc chế</h2>
-        <p>Chọn một Tower để khắc chế quái vật xuất hiện!</p>
-        <div id="enemy-container">
-            <span id="enemy-name">Quái vật sẽ xuất hiện tại đây...</span>
-        </div>
-        <div id="tower-options">
-        </div>
-        <p id="game-result"></p>
+    <section class="tower-category">
+      <h2>Lính Tàng Hình</h2>
+      <div class="tower-grid">
+        <div><img src="../img/Golden Scout.png"><p>Golden Scout</p></div>
+        <div><img src="../img/Minigunner.png"><p>Minigunner</p></div>
+        <div><img src="../img/Warden.png"><p>Warden</p></div>
+        
+      </div>
     </section>
 
-    <script src="../js/tower.js"></script>
+    <section class="tower-category">
+      <h2>Lính Xuyên Giáp</h2>
+      <div class="tower-grid">
+        <div><img src="../img/Accelerator.png"><p>Accelerator</p></div>
+        <div><img src="../img/EngineerIcon.png"><p>Engineer</p></div>
+        <div><img src="../img/Ranger.png"><p>Ranger</p></div>
+      </div>
+    </section>
+
+    <section class="tower-category">
+      <h2>Lính Khống Chế</h2>
+      <div class="tower-grid">
+        <div><img src="../img/Freezer.png"><p>Freezer</p></div>
+        <div><img src="../img/Electroshocker.png"><p>Electroshocker</p></div>
+        <div><img src="../img/ToxicGIcon.png"><p>Toxic Gunner</p></div>
+      </div>
+    </section>
+
+    <section class="tower-category">
+      <h2>Lính Hỗ Trợ</h2>
+      <div class="tower-grid">
+        <div><img src="../img/Medic.png"><p>Medic</p></div>
+        <div><img src="../img/DJ Booth.png"><p>DJ Booth</p></div>
+        <div><img src="../img/Commander.png"><p>Commander</p></div>
+      </div>
+    </section>
+
+    <section id="game">
+      <h2>Mini Game: Tìm Thẻ Bài Tương Ứng</h2>
+      <div id="gameArea">
+        <p id="monsterCard">Quái vật đang xuất hiện...</p>
+        <div class="card-options" id="cardOptions"></div>
+        <p id="result"></p>
+        <button onclick="startGame()">Bắt đầu</button>
+      </div>
+    </section>
+  </div>
+
+  <script src="../js/tower.js"></script>
 </body>
 </html>

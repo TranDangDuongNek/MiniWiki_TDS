@@ -1,62 +1,76 @@
-// Danh sách quái vật và tower có thể khắc chế
-const enemyData = [
-    { name: "Quái bay", counter: ["Lính đánh trên trời"] },
-    { name: "Quái tàng hình", counter: ["Lính đánh tàng hình"] },
-    { name: "Quái giáp (Tank)", counter: ["Lính đánh xuyên giáp"] },
-    { name: "Quái chạy nhanh", counter: ["Lính khống chế"] },
-    { name: "Quái gây choáng", counter: ["Lính hỗ trợ"] },
-    { name: "BOSS", counter: ["Lính đánh trên trời", "Lính đánh xuyên giáp", "Lính khống chế"] } // Boss cần nhiều loại khắc chế
-];
-
-const towers = [
-    "Lính đánh trên trời",
-    "Lính đánh tàng hình",
-    "Lính đánh xuyên giáp",
-    "Lính khống chế",
-    "Lính hỗ trợ"
-];
-
-// Biến lưu số lần thắng liên tiếp
-let winStreak = 0;
-
-// Lấy các phần tử từ HTML
-const enemyContainer = document.getElementById("enemy-container");
-const towerOptions = document.getElementById("tower-options");
-const gameResult = document.getElementById("game-result");
-
-// Tạo nút chọn Tower
-towers.forEach(tower => {
-    let btn = document.createElement("button");
-    btn.classList.add("tower-btn");
-    btn.innerText = tower;
-    btn.onclick = () => checkAnswer(tower);
-    towerOptions.appendChild(btn);
-});
-
-// Chọn quái vật ngẫu nhiên
-let currentEnemy = null;
-function generateEnemy() {
-    currentEnemy = enemyData[Math.floor(Math.random() * enemyData.length)];
-    enemyContainer.innerText = `⚔️ Quái vật: ${currentEnemy.name}`;
-}
-
-// Kiểm tra câu trả lời
-function checkAnswer(selectedTower) {
-    if (currentEnemy.counter.includes(selectedTower)) {
-        winStreak++;
-        gameResult.innerText = `✅ Đúng! (Chuỗi thắng: ${winStreak}/5)`;
-
-        if (winStreak === 5) {
-            gameResult.innerText = "🏆 Bạn đã chiến thắng mini-game!";
-            winStreak = 0; // Reset chuỗi thắng
-        } else {
-            setTimeout(generateEnemy, 1000);
-        }
+const monsterTypes = [
+    { name: "Quái vật bay", counter: "Lính Đánh Trên Trời" },
+    { name: "Quái vật tàng hình", counter: "Lính Tàng Hình" },
+    { name: "Quái vật giáp dày", counter: "Lính Xuyên Giáp" },
+    { name: "Quái vật chạy nhanh", counter: "Lính Khống Chế" },
+    { name: "Quái vật gây choáng", counter: "Lính Hỗ Trợ" },
+  ];
+  
+  const towers = [
+    { name: "Pursuit", type: "Lính Đánh Trên Trời", img: "../img/Pursuit.png" },
+    { name: "Ace Pilot", type: "Lính Đánh Trên Trời", img: "../img/Ace Pilot.png" },
+    { name: "Militant", type: "Lính Đánh Trên Trời", img: "../img/Militant.png" },
+    { name: "Warden", type: "Lính Tàng Hình", img: "../img/Warden.png" },
+    { name: "Golden Scout", type: "Lính Tàng Hình", img: "../img/Golden Scout.png" },
+    { name: "Minigunner", type: "Lính Tàng Hình", img: "../img/Minigunner.png" },
+    { name: "Accelerator", type: "Lính Xuyên Giáp", img: "../img/Accelerator.png" },
+    { name: "Engineer", type: "Lính Xuyên Giáp", img: "../img/EngineerIcon.png" },
+    { name: "Ranger", type: "Lính Xuyên Giáp", img: "../img/Ranger.png" },
+    { name: "Freezer", type: "Lính Khống Chế", img: "../img/Freezer.png" },
+    { name: "Electroshocker", type: "Lính Khống Chế", img: "../img/Electroshocker.png" },
+    { name: "Toxic Gunner", type: "Lính Khống Chế", img: "../img/ToxicGIcon.png" },
+    { name: "Medic", type: "Lính Hỗ Trợ", img: "../img/Medic.png" },
+    { name: "DJ Booth", type: "Lính Hỗ Trợ", img: "../img/DJ Booth.png" },
+    { name: "Commander", type: "Lính Hỗ Trợ", img: "../img/Commander.png" },
+  ];
+  
+  let currentMonster;
+  
+  function startGame() {
+    document.getElementById("result").innerText = "";
+    currentMonster = monsterTypes[Math.floor(Math.random() * monsterTypes.length)];
+    document.getElementById("monsterCard").innerText = `Thẻ bài: ${currentMonster.name}`;
+    renderOptions();
+  }
+  
+  function renderOptions() {
+    const container = document.getElementById("cardOptions");
+    container.innerHTML = "";
+  
+    const validTowers = towers.filter(t => t.type === currentMonster.counter);
+    const randomValid = validTowers[Math.floor(Math.random() * validTowers.length)];
+  
+    const shuffledWrong = towers
+      .filter(t => t.name !== randomValid.name)
+      .sort(() => Math.random() - 0.5)
+      .slice(0, 5);
+  
+    const finalOptions = [...shuffledWrong, randomValid].sort(() => Math.random() - 0.5);
+  
+    finalOptions.forEach(tower => {
+      const card = document.createElement("div");
+      card.className = "tower-card";
+      card.onclick = () => checkAnswer(tower);
+  
+      const img = document.createElement("img");
+      img.src = tower.img;
+      img.alt = tower.name;
+  
+      const label = document.createElement("p");
+      label.innerHTML = `<strong>${tower.name}</strong>`;
+  
+      card.appendChild(img);
+      card.appendChild(label);
+      container.appendChild(card);
+    });
+  }
+  
+  function checkAnswer(tower) {
+    if (tower.type === currentMonster.counter) {
+      document.getElementById("result").innerHTML = "✅ Chính xác! Tower này khắc chế được quái vật.";
     } else {
-        gameResult.innerText = `❌ Sai rồi! Bạn cần dùng "${currentEnemy.counter.join(", ")}" để khắc chế.`;
-        winStreak = 0; // Reset chuỗi thắng
+      document.getElementById("result").innerHTML =
+        `❌ Sai rồi! Tower này không hiệu quả.<br>→ Gợi ý: Dùng <strong>${currentMonster.counter}</strong>`;
     }
-}
-
-// Khởi động game
-generateEnemy();
+  }
+  
