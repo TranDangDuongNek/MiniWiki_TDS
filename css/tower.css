@@ -12,16 +12,19 @@ nav {
     background-color: #4D55CC;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center; /* giữ menu nằm giữa */
     padding: 0 30px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
+
 
 .nut_an {
     display: flex;
     list-style: none;
     padding: 0;
-    margin: 0 auto;
+    margin: 0;
+    gap: 30px; /* khoảng cách các nút */
+    align-items: center;
 }
 
 .nut_an li {
@@ -45,18 +48,18 @@ nav {
     background-color: #B5A8D5;
     color: white;
     border: none;
-    padding: 12px 20px;
+    padding: 12px 18px;
     border-radius: 5px;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s ease-in-out, transform 0.1s;
+    transition: background-color 0.3s ease-in-out;
+    /* Xóa mấy cái scale đi */
 }
-
 #nut-dang-nhap:hover {
     background-color: #7A73D1;
-    transform: scale(1.05);
 }
+
 
 #nut-dang-nhap:active {
     transform: scale(0.95);

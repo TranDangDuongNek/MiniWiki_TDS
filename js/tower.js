@@ -7,21 +7,21 @@ const monsterTypes = [
   ];
   
   const towers = [
-    { name: "Pursuit", type: "Lính Đánh Trên Trời", img: "../img/Pursuit.png" },
-    { name: "Ace Pilot", type: "Lính Đánh Trên Trời", img: "../img/Ace Pilot.png" },
-    { name: "Militant", type: "Lính Đánh Trên Trời", img: "../img/Militant.png" },
-    { name: "Warden", type: "Lính Tàng Hình", img: "../img/Warden.png" },
-    { name: "Golden Scout", type: "Lính Tàng Hình", img: "../img/Golden Scout.png" },
-    { name: "Minigunner", type: "Lính Tàng Hình", img: "../img/Minigunner.png" },
-    { name: "Accelerator", type: "Lính Xuyên Giáp", img: "../img/Accelerator.png" },
-    { name: "Engineer", type: "Lính Xuyên Giáp", img: "../img/EngineerIcon.png" },
-    { name: "Ranger", type: "Lính Xuyên Giáp", img: "../img/Ranger.png" },
-    { name: "Freezer", type: "Lính Khống Chế", img: "../img/Freezer.png" },
-    { name: "Electroshocker", type: "Lính Khống Chế", img: "../img/Electroshocker.png" },
-    { name: "Toxic Gunner", type: "Lính Khống Chế", img: "../img/ToxicGIcon.png" },
-    { name: "Medic", type: "Lính Hỗ Trợ", img: "../img/Medic.png" },
-    { name: "DJ Booth", type: "Lính Hỗ Trợ", img: "../img/DJ Booth.png" },
-    { name: "Commander", type: "Lính Hỗ Trợ", img: "../img/Commander.png" },
+    { name: "Pursuit", type: "Lính Đánh Trên Trời", img: "../img_tower/Pursuit.png" },
+    { name: "Ace Pilot", type: "Lính Đánh Trên Trời", img: "../img_tower/Ace Pilot.png" },
+    { name: "Militant", type: "Lính Đánh Trên Trời", img: "../img_tower/Militant.png" },
+    { name: "Warden", type: "Lính Tàng Hình", img: "../img_tower/Warden.png" },
+    { name: "Golden Scout", type: "Lính Tàng Hình", img: "../img_tower/Golden Scout.png" },
+    { name: "Minigunner", type: "Lính Tàng Hình", img: "../img_tower/Minigunner.png" },
+    { name: "Accelerator", type: "Lính Xuyên Giáp", img: "../img_tower/Accelerator.png" },
+    { name: "Engineer", type: "Lính Xuyên Giáp", img: "../img_tower/EngineerIcon.png" },
+    { name: "Ranger", type: "Lính Xuyên Giáp", img: "../img_tower/Ranger.png" },
+    { name: "Freezer", type: "Lính Khống Chế", img: "../img_tower/Freezer.png" },
+    { name: "Electroshocker", type: "Lính Khống Chế", img: "../img_tower/Electroshocker.png" },
+    { name: "Toxic Gunner", type: "Lính Khống Chế", img: "../img_tower/ToxicGIcon.png" },
+    { name: "Medic", type: "Lính Hỗ Trợ", img: "../img_tower/Medic.png" },
+    { name: "DJ Booth", type: "Lính Hỗ Trợ", img: "../img_tower/DJ Booth.png" },
+    { name: "Commander", type: "Lính Hỗ Trợ", img: "../img_tower/Commander.png" },
   ];
   
   let currentMonster;
