@@ -1,14 +1,12 @@
-/* Thiết lập chung */
 body {
-    padding: 0;
-    margin: 0;
+    font-family: Arial, sans-serif;
     background: linear-gradient(to right, #211C84, #4D55CC);
-    
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-/* Thanh điều hướng */
-nav {
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav {
     width: 100%;
     height: 80px;
     background-color: #4D55CC;
@@ -17,35 +15,36 @@ nav {
     justify-content: center; /* giữ menu nằm giữa */
     padding: 0 30px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-}
-
-.nut_an {
+  }
+  
+  
+  .nut_an {
     display: flex;
     list-style: none;
     padding: 0;
     margin: 0;
     gap: 30px; /* khoảng cách các nút */
     align-items: center;
-}
-
-.nut_an li {
+  }
+  
+  .nut_an li {
     margin: 0 20px;
-}
-
-.nut_an a {
+  }
+  
+  .nut_an a {
     text-decoration: none;
     color: white;
     font-weight: bold;
     font-size: 18px;
     padding: 12px 18px;
     transition: color 0.3s ease-in-out;
-}
-
-.nut_an a:hover {
+  }
+  
+  .nut_an a:hover {
     color: #B5A8D5;
-}
-
-#nut-dang-nhap {
+  }
+  
+  #nut-dang-nhap {
     background-color: #B5A8D5;
     color: white;
     border: none;
@@ -56,10 +55,11 @@ nav {
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
     /* Xóa mấy cái scale đi */
-}
-#nut-dang-nhap:hover {
+  }
+  #nut-dang-nhap:hover {
     background-color: #7A73D1;
-}
+  }
+  
   
   #nut-dang-nhap:active {
     transform: scale(0.95);
