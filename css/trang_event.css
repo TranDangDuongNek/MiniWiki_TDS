@@ -4,6 +4,7 @@ body {
     color: #000;
     margin: 0;
     padding: 0;
+    overflow-x:hidden;
   }
   
   nav {
@@ -93,19 +94,22 @@ img {
     margin-top: 5px;
     font-size: 14px;
     color: #666;
+    cursor: pointer;
+    text-align: center;
 }
 .event-name {
     font-size: 16px;
     color: #003366; /* Màu xanh đậm */
     margin: 5px 0;
+    cursor: pointer;
+    text-align: center;
 }
         
-        
-        h1{
-            font-size: 55px;          
-            color: #000000;              
-            text-align: center;
-        }
+h1{
+font-size: 55px;          
+color: #000000;              
+text-align: center;
+}
 
 /* --------------------------------- */
 
@@ -114,10 +118,11 @@ img {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    
 }
 
 .event-images div {
-    width: 45%; /* Mỗi hình chiếm 45% hàng để hiển thị 2 ảnh 1 hàng */
+    width: 40%; /* Mỗi hình chiếm 45% hàng để hiển thị 2 ảnh 1 hàng */
     padding: 10px;
     text-align: center;
     background: white;
@@ -134,6 +139,7 @@ img {
     width: 100%;
     height: auto;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 
@@ -145,6 +151,7 @@ img {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     margin-top: 10px;
     width: 80%;
+    
 }
 
 .event-info iframe {

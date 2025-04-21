@@ -33,3 +33,4 @@ function checkCurrentUser(nut_dang_nhap) {
 
 // Gọi hàm để chạy
 checkCurrentUser(nutDangNhap);
+
