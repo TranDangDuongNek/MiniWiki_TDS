@@ -5,9 +5,7 @@ import {
   updateProfile
 } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js";
 import {
-  getFirestore,
-  doc,
-  setDoc
+  getFirestore
 } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js";
 
 const firebaseConfig = {
@@ -25,51 +23,44 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
 
-function validateForm(username, email, password, confirmPassword, errorElement) {
-  const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-  errorElement.textContent = "";
-
-  if (!username || !email || !password || !confirmPassword) {
-    errorElement.textContent = "Vui lòng điền đầy đủ thông tin!";
-    return false;
-  } else if (!emailRegex.test(email)) {
-    errorElement.textContent = "Email không đúng định dạng!";
-    return false;
-  } else if (password.length < 6) {
-    errorElement.textContent = "Mật khẩu phải từ 6 chữ số trở lên!";
-    return false;
-  } else if (password !== confirmPassword) {
-    errorElement.textContent = "Mật khẩu xác nhận không khớp!";
-    return false;
-  }
-  return true;
-}
-
-document.getElementById("register-btn").addEventListener("click", async function (e) {
+document.getElementById("register-btn").addEventListener("click", function (e) {
   e.preventDefault();
-  const username = document.getElementById("ten_nguoi_dung").value;
+
+  const username = document.getElementById("username").value;
   const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
-  const confirmPassword = document.getElementById("xac_nhan_password").value;
+  const confirmPassword = document.getElementById("confirm_password").value;
   const errorElement = document.getElementById("error_message");
 
-  if (validateForm(username, email, password, confirmPassword, errorElement)) {
-    try {
-      const userCredential = await createUserWithEmailAndPassword(auth, email, password);
-      await updateProfile(userCredential.user, { displayName: username });
+  // Kiểm tra hợp lệ
+  if (!username || !email || !password || !confirmPassword) {
+    errorElement.textContent = "Vui lòng điền đầy đủ thông tin!";
+    return;
+  } else if (password !== confirmPassword) {
+    errorElement.textContent = "Mật khẩu xác nhận không khớp!";
+    return;
+  }
 
-      await setDoc(doc(db, "users", userCredential.user.uid), {
-        username,
-        email,
-        uid: userCredential.user.uid,
-        createdAt: new Date().toISOString()
+  createUserWithEmailAndPassword(auth, email, password)
+    .then(async (userCredential) => {
+      const user = userCredential.user;
+
+      // ✅ Cập nhật displayName bằng username
+      await updateProfile(user, {
+        displayName: username
       });
+
+      // ✅ Lưu vào localStorage
+      localStorage.setItem("currentUser", JSON.stringify({
+        email: user.email,
+        uid: user.uid,
+        username: username
+      }));
 
       alert("Đăng ký thành công!");
       window.location.href = "../index.html";
-    } catch (error) {
-      errorElement.textContent = "Đăng ký thất bại: " + error.message;
-      errorElement.style.color = "red";
-    }
-  }
+    })
+    .catch((error) => {
+      errorElement.textContent = "Lỗi đăng ký: " + error.message;
+    });
 });

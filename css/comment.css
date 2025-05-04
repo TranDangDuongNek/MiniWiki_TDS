@@ -7,6 +7,63 @@ body {
   color: #222;
 }
 
+nav {
+  width: 100%;
+  height: 80px;
+  background-color: #4D55CC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 30px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.nut_an {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 30px;
+  align-items: center;
+}
+
+.nut_an li {
+  margin: 0 20px;
+}
+
+.nut_an a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 12px 18px;
+  transition: color 0.3s ease-in-out;
+}
+
+.nut_an a:hover {
+  color: #B5A8D5;
+}
+
+#nut-dang-nhap {
+  background-color: #B5A8D5;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#nut-dang-nhap:hover {
+  background-color: #7A73D1;
+}
+
+#nut-dang-nhap:active {
+  transform: scale(0.95);
+}
+
 h1 {
   text-align: center;
   margin-bottom: 20px;
@@ -52,12 +109,13 @@ button {
   font-weight: bold;
   cursor: pointer;
   border-radius: 8px;
-  transition: 0.3s ease;
+  transition: background 0.6s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 button:hover {
   background: linear-gradient(45deg, #8b5cf6, #d8b4fe);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .post {
@@ -74,4 +132,23 @@ button:hover {
   max-width: 100%;
   border-radius: 10px;
   margin-top: 10px;
+}
+
+/* Phần CSS cho các nút like/dislike/delete */
+.like-button, .dislike-button, .delete-button {
+  font-size: 14px;
+  background-color: #7a73d1;
+  color: white;
+  border-radius: 8px;
+  padding: 8px 16px;
+  margin-right: 8px;
+  transition: background-color 0.3s;
+}
+
+.like-button:hover, .dislike-button:hover, .delete-button:hover {
+  background-color: #5f57d1;
+}
+
+.like-button:active, .dislike-button:active, .delete-button:active {
+  transform: scale(0.95);
 }
