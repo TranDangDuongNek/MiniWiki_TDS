@@ -1,0 +1,360 @@
+[
+    {
+        "name": "Military Base",
+        "items": [
+            {
+                "name": "Humvee",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/b/b9/DefaultHumvee.png"
+            },
+            {
+                "name": "Humvee 2",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/1/17/DefaultHumvee2.png"
+            },
+            {
+                "name": "Tank (Unit)",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/6/68/DefaultTank.png"
+            },
+            {
+                "name": "Railgun Tank",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/b/b3/DefaultRailgunTank.png"
+            }
+        ]
+    },
+    {
+        "name": "Engineer",
+        "items": [
+            {
+                "name": "Sentry (Unit)",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/6/6b/SentryUnit.png"
+            },
+            {
+                "name": "Rifle Sentry",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/f/fd/Rifle_Sentry.png"
+            },
+            {
+                "name": "Minigun Sentry",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/5/53/Minigun_Sentry.png"
+            },
+            {
+                "name": "War Machine Sentry",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/2/28/WarMachineSentry.png"
+            }
+        ]
+    },
+    {
+        "name": "Crook Boss",
+        "items": [
+            {
+                "name": "Pistol Goon",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/5/52/Goon1.png"
+            },
+            {
+                "name": "Tommy Goon 1",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/3/3d/Goon2.png"
+            },
+            {
+                "name": "Tommy Goon 2",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/0/01/Goon3.png"
+            }
+        ]
+    },
+    {
+        "name": "Golden Crook Boss",
+        "items": [
+            {
+                "name": "Golden Pistol Goon",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/d/df/GGoon1.png"
+            },
+            {
+                "name": "Golden Tommy Goon 1",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/7/7a/GGoon2.png"
+            },
+            {
+                "name": "Golden Tommy Goon 2",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/6/6b/GGoon3.png"
+            }
+        ]
+    },
+    {
+        "name": "Commander",
+        "items": [
+            {
+                "name": "Gunner APC",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/4/4e/GunnerAPCDefault.png"
+            },
+            {
+                "name": "Missile APC",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/1/19/MissileAPCDefault.png"
+            }
+        ]
+    },
+    {
+        "name": "Mercenary Base",
+        "items": [
+            {
+                "name": "Rifleman",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/2/26/Rifleman1.png"
+            },
+            {
+                "name": "Grenadier",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/6/67/Grenadier0-1.png"
+            },
+            {
+                "name": "Field Medic",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/5/5d/FieldMedic1.png"
+            },
+            {
+                "name": "Riot Guard",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/a/a2/Riot_Guard1.png"
+            }
+        ]
+    },
+    {
+        "name": "Elf Camp",
+        "items": [
+            {
+                "name": "Elf",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/e/e5/NormieElf.png"
+            },
+            {
+                "name": "Snowball Elf",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/4/4b/SnowballElf.png"
+            },
+            {
+                "name": "Bomber Elf (Unit)",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/f/fd/BomberElf.png"
+            },
+            {
+                "name": "Gunner Elf",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/8/82/GunnerElf.png"
+            },
+            {
+                "name": "Gift Bomber",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/7/7b/UnitGiftBomber.png"
+            },
+            {
+                "name": "Ripped Elf (Unit)",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/8/8c/RippedElf.png"
+            }
+        ]
+    },
+    {
+        "name": "Necromancer",
+        "items": [
+            {
+                "name": "Skeleton (Unit)",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/4/47/Skeletonlunar.png"
+            },
+            {
+                "name": "Sword Skeleton",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/3/31/SwordSkeleton.png"
+            },
+            {
+                "name": "Giant Skeleton (Unit)",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/a/ab/GiantSkeletonLunar.png"
+            },
+            {
+                "name": "Skeleton Knight",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/8/83/SkeletonKnight.png"
+            },
+            {
+                "name": "Hallow Guard (Unit)",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/8/8c/HallowGuardLunar1.png"
+            },
+            {
+                "name": "Executioner Skeleton",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/a/a3/ExecutionerSkeleton.png"
+            }
+        ]
+    },
+    {
+        "name": "Elementalist",
+        "items": [
+            {
+                "name": "Ice Turret",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/4/47/IceTurret.png"
+            }
+        ]
+    },
+    {
+        "name": "Biologist",
+        "items": [
+            {
+                "name": "Sunflower",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/8/8b/SunflowerIcon.png"
+            },
+            {
+                "name": "Ivy",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/0/0e/IvyIcon.png"
+            },
+            {
+                "name": "Nightshade",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/e/e3/NightshadeIcon.png"
+            }
+        ]
+    },
+    {
+        "name": "Consumables",
+        "items": [
+            {
+                "name": "Molten Monster",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/8/85/MoltenMonster.png"
+            },
+            {
+                "name": "Fire Ducky",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/7/7f/FireDuckyHappy.png"
+            },
+            {
+                "name": "Confusion Ducky",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/e/ee/ConfusionDuckyHappy.png"
+            },
+            {
+                "name": "Ice Ducky",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/6/67/IceDuckyHappy.png"
+            },
+            {
+                "name": "Poison Ducky",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/c/cb/PoisonDuckyHappy.png"
+            },
+            {
+                "name": "Shock Ducky",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/1/11/ShockDuckyHappy.png"
+            }
+        ]
+    },
+    {
+        "name": "Mecha Base",
+        "items": [
+            {
+                "name": "Mark I",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/1/11/MarkI.png"
+            },
+            {
+                "name": "Mark II",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/0/01/MarkII.png"
+            },
+            {
+                "name": "Mark III",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/0/09/MarkIII.png"
+            },
+            {
+                "name": "Mark IV",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/8/89/MarkIV.png"
+            },
+            {
+                "name": "Mark V",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/4/40/MarkV.png"
+            }
+        ]
+    },
+    {
+        "name": "Military Base",
+        "items": [
+            {
+                "name": "Motorcycle",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/e/e6/Motorcycle.png"
+            },
+            {
+                "name": "Truck1",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/0/01/MilitaryBase1.png"
+            },
+            {
+                "name": "Truck2",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/f/f8/MilitaryBase2.png"
+            },
+            {
+                "name": "Truck3",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/c/cd/MilitaryBase3.png"
+            }
+        ]
+    },
+    {
+        "name": "Crook Boss",
+        "items": [
+            {
+                "name": "Crook",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/d/db/Crook0.png"
+            },
+            {
+                "name": "Mafia",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/e/ef/Mafia0.png"
+            },
+            {
+                "name": "Body Guard",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/d/d2/Bodyguards2.png"
+            },
+            {
+                "name": "Body Guards 1",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/c/cb/BodyGuards1.png"
+            },
+            {
+                "name": "Body Guards 2",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/c/c7/Guardlevel4.png"
+            }
+        ]
+    },
+    {
+        "name": "Golden Crook Boss",
+        "items": [
+            {
+                "name": "Golden Body Guard",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/b/bc/GBodyGuard.png"
+            },
+            {
+                "name": "Golden Body Guards 1",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/c/ce/GBodyGuards2.png"
+            },
+            {
+                "name": "Golden Body Guards 2",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/3/3e/GGuards2.png"
+            }
+        ]
+    },
+    {
+        "name": "Mecha Base",
+        "items": [
+            {
+                "name": "XR600",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/4/43/600.png"
+            },
+            {
+                "name": "Armored XR600",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/0/07/ArmoredXR600.png"
+            },
+            {
+                "name": "XR700",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/c/c4/XR700.png"
+            },
+            {
+                "name": "XR900",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/d/de/XR900.png"
+            },
+            {
+                "name": "XR901",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/0/07/XR901.png"
+            }
+        ]
+    },
+    {
+        "name": "Enforcer",
+        "items": [
+            {
+                "name": "SWAT Van",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/6/62/Enforcer5.png"
+            }
+        ]
+    },
+    {
+        "name": "Trick or Threat Town",
+        "items": [
+            {
+                "name": "Citizen 1",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/1/15/Citizen1.png"
+            },
+            {
+                "name": "Citizen 2",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/b/b1/Citizen2.png"
+            }
+        ]
+    }
+]

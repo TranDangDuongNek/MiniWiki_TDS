@@ -1,0 +1,277 @@
+[
+    {
+        "name": "Starter",
+        "items": [
+            {
+                "name": "Scout",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/4/4e/DefaultScout3.png"
+            },
+            {
+                "name": "Sniper",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/e/e0/DefaultSniperIcon1.png"
+            },
+            {
+                "name": "Paintballer",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/b/b3/NewPaintballerIcon.png"
+            },
+            {
+                "name": "Demoman",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/c/c3/DefaultDemomanIcon2.png"
+            },
+            {
+                "name": "Hunter",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/2/26/NewHunterIcon.png"
+            },
+            {
+                "name": "Soldier",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/d/da/KrampusRevengeSoldierIcon.png"
+            }
+        ]
+    },
+    {
+        "name": "Intermediate",
+        "items": [
+            {
+                "name": "Militant",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/6/62/EasterMilitant_Icon.png"
+            },
+            {
+                "name": "Medic",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/9/90/DefaultMedicIconn.png"
+            },
+            {
+                "name": "Freezer",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/6/6e/ReworkedFreezerIcon.png"
+            },
+            {
+                "name": "Farm",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/e/e2/DefaultFarmIcon.png"
+            },
+            {
+                "name": "Shotgunner",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/9/9a/EasterShotgunner_Icon.png"
+            },
+            {
+                "name": "Rocketeer",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/8/89/RocketeerIcon2025.png"
+            },
+            {
+                "name": "Trapper",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/0/0f/TrapperIcon.png"
+            },
+            {
+                "name": "Ace Pilot",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/1/1a/DefaultAcePilotIconIGJ24.png"
+            },
+            {
+                "name": "Pyromancer",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/4/4b/DefaultPyromancerIcon.png"
+            },
+            {
+                "name": "Military Base",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/d/d0/DefaultMilitaryBaseIconM29.png"
+            },
+            {
+                "name": "Crook Boss",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/b/b6/CBRCBossIcon.png"
+            }
+        ]
+    },
+    {
+        "name": "Advanced",
+        "items": [
+            {
+                "name": "Electroshocker",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/d/d5/DefaultElectroshockerIcon2.png"
+            },
+            {
+                "name": "Commander",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/c/c9/Commandernew.png"
+            },
+            {
+                "name": "Warden",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/a/a5/Warden.png"
+            },
+            {
+                "name": "Cowboy",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/8/82/WDDefaultCowboyIcon.png"
+            },
+            {
+                "name": "DJ Booth",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/3/33/DefaultDJBoothIconAug2024.png"
+            },
+            {
+                "name": "Minigunner",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/8/81/NewMinigunner.png"
+            },
+            {
+                "name": "Ranger",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/5/52/Newranger.png"
+            },
+            {
+                "name": "Pursuit",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/c/c7/DefaultPursuitIconIGNov24.png"
+            },
+            {
+                "name": "Gatling Gun",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/7/78/DefaultGatlingGunIconIG.png"
+            },
+            {
+                "name": "Turret",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/b/b3/DefaultTurretIcon.png"
+            },
+            {
+                "name": "Mortar",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/0/05/MortarIcon.png"
+            },
+            {
+                "name": "Mercenary Base",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/4/4d/Mercenary_base_image.png"
+            }
+        ]
+    },
+    {
+        "name": "Hardcore",
+        "items": [
+            {
+                "name": "Brawler",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/c/c5/BrawlerFromTDS.png"
+            },
+            {
+                "name": "Necromancer",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/0/0b/NecromancerTowerIcon.png"
+            },
+            {
+                "name": "Accelerator",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/5/56/DefaultAcceleratorIcon2.png"
+            },
+            {
+                "name": "Engineer",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/e/ec/EngineerIcon.png"
+            }
+        ]
+    },
+    {
+        "name": "Golden Perks",
+        "items": [
+            {
+                "name": "Golden Minigunner",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/c/cb/Goldenminigunner.png"
+            },
+            {
+                "name": "Golden Pyromancer",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/f/fb/DHGoldenPyroIcon.png"
+            },
+            {
+                "name": "Golden Crook Boss",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/b/bb/NewGoldenCrookBoss.png"
+            },
+            {
+                "name": "Golden Scout",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/a/a0/GoldenScout3.png"
+            },
+            {
+                "name": "Golden Cowboy",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/b/b6/WDGoldenCowboyIcon.png"
+            },
+            {
+                "name": "Golden Soldier",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/e/e7/KR_Golden_Soldier_Icon.png"
+            }
+        ]
+    },
+    {
+        "name": "Exclusive",
+        "items": [
+            {
+                "name": "Gladiator",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/3/3c/GladiatorIconn.png"
+            },
+            {
+                "name": "Commando",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/e/e2/NewCommandoIcon.png"
+            },
+            {
+                "name": "Slasher",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/2/28/HexscapeSlasherIcon.png"
+            },
+            {
+                "name": "Frost Blaster",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/b/b5/KRFrostBlasterIcon.png"
+            },
+            {
+                "name": "Archer",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/2/21/DHDefaultArcherIcon.png"
+            },
+            {
+                "name": "Swarmer",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/f/f6/SwarmerReworkIconIG.png"
+            },
+            {
+                "name": "Toxic Gunner",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/d/d5/ToxicGIcon.png"
+            },
+            {
+                "name": "Sledger",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/1/12/OICESledgerIcon.png"
+            },
+            {
+                "name": "Executioner",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/2/2d/DefaultExecutioner2.png"
+            },
+            {
+                "name": "Elf Camp",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/c/ca/Elf_Camp_Tower_Icon.png"
+            },
+            {
+                "name": "Jester",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/7/71/JesterIcon.png"
+            },
+            {
+                "name": "Cryomancer",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/6/6d/OICECryomancerIcon.png"
+            },
+            {
+                "name": "Hallow Punk",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/6/6b/HallowPunkIcon.png"
+            },
+            {
+                "name": "Harvester",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/c/cc/HarvesterIcon.png"
+            },
+            {
+                "name": "Snowballer",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/e/e3/SnowballerIcon.png"
+            },
+            {
+                "name": "Elementalist",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/0/07/ElementalistIcon.png"
+            },
+            {
+                "name": "Firework Technician",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/5/56/FireworkTechnicianIcon.png"
+            },
+            {
+                "name": "Biologist",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/c/c9/BiologistIcon.png"
+            },
+            {
+                "name": "War Machine",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/e/e8/WarMachineIcon.png"
+            },
+            {
+                "name": "Mecha Base",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/c/ce/OUMechaBaseIcon.png"
+            }
+        ]
+    },
+    {
+        "name": "Removed",
+        "items": [
+            {
+                "name": "Sentry",
+                "img": "https://static.wikia.nocookie.net/tower-defense-sim/images/e/e5/Sentry.png"
+            }
+        ]
+    }
+]

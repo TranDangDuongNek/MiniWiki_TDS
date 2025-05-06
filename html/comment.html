@@ -6,17 +6,19 @@
   <link rel="stylesheet" href="../css/comment.css">
 </head>
 <body>
+  
   <nav>
     <ul class="nut_an">
-        <li><a href="../index.html">HOME</a></li>
-        <li><a href="video.html">VIDEO</a></li>
-        <li><a href="event.html">EVENT</a></li>
-        <li><a href="tower.html">TOWER</a></li>
-        <li><a href="monster.html">MONSTER</a></li>
-        <li><a href="../html/comment.html">COMMENT</a></li> 
-        <li><button id="nut-dang-nhap">ĐĂNG NHẬP</button></li> <!-- đưa nút vào đây -->
+      <li><a id="nav-home" href="#">HOME</a></li>
+      <li><a id="nav-video" href="#">VIDEO</a></li>
+      <li><a id="nav-event" href="#">EVENT</a></li>
+      <li><a id="nav-tower" href="#">TOWER</a></li>
+      <li><a id="nav-monster" href="#">MONSTER</a></li>
+      <li><a id="nav-comment" href="#">COMMENT</a></li>
+      <li><button id="nut-dang-nhap">ĐĂNG NHẬP</button></li>
     </ul>
-  </nav> 
+  </nav>
+
   <h1>📝COMMENT!</h1>
   <div class="form">
     <textarea id="content" placeholder="Viết gì đó..."></textarea>
@@ -26,7 +28,8 @@
 
   <div id="postList"></div>
   
-  <script type="module" src="../js/comment.js" defer></script> 
-  <script src="../js/home-login.js"></script>
+  <script src="../js/nav.js"></script>
+  <script type="module" src="../js/createComment.js"></script> 
+  <script type="module" src="../js/comment.js"></script> 
 </body>
 </html>

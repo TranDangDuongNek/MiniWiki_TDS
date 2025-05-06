@@ -1,86 +1,44 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
-  <meta charset="UTF-8">
-  <title>Trang Tower</title>
-  <link rel="stylesheet" href="../css/tower.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Trang Tower</title>
+    <link rel="stylesheet" href="../css/tower.css" />
+  </head>
+  <body>
     <nav>
       <ul class="nut_an">
-        <li><a href="../index.html">HOME</a></li>
-        <li><a href="video.html">VIDEO</a></li>
-        <li><a href="event.html">EVENT</a></li>
-        <li><a href="tower.html">TOWER</a></li>
-        <li><a href="monster.html">MONSTER</a></li>
-        <li><a href="../html/comment.html">COMMENT</a></li> 
-        <li><button id="nut-dang-nhap">ĐĂNG NHẬP</button></li> <!-- đưa nút vào đây -->
+        <li><a id="nav-home" href="#">HOME</a></li>
+        <li><a id="nav-video" href="#">VIDEO</a></li>
+        <li><a id="nav-event" href="#">EVENT</a></li>
+        <li><a id="nav-tower" href="#">TOWER</a></li>
+        <li><a id="nav-monster" href="#">MONSTER</a></li>
+        <li><a id="nav-comment" href="#">COMMENT</a></li>
+        <li><button id="nut-dang-nhap">ĐĂNG NHẬP</button></li>
       </ul>
-        
-    
-        </nav> 
+    </nav>
 
-  <div class="container">
-    <h1>Các Loại Tower</h1>
+    <div class="container">
+      <h1>Các Loại Tower</h1>
 
-    <section class="tower-category">
-      <h2>Lính Đánh Trên Trời</h2>
-      <div class="tower-grid">
-        <div><img src="../img_tower/Pursuit.png"><p>Pursuit</p></div>
-        <div><img src="../img_tower/Ace Pilot.png"><p>Ace Pilot</p></div>
-        <div><img src="../img_tower/Militant.png"><p>Militant</p></div>        
+      <div id="sections">
+
       </div>
-    </section>
+      
 
-    <section class="tower-category">
-      <h2>Lính Tàng Hình</h2>
-      <div class="tower-grid">
-        <div><img src="../img_tower/Golden Scout.png"><p>Golden Scout</p></div>
-        <div><img src="../img_tower/Minigunner.png"><p>Minigunner</p></div>
-        <div><img src="../img_tower/Warden.png"><p>Warden</p></div>
-        
-      </div>
-    </section>
+      <section id="game">
+        <h2>Mini Game: Tìm Thẻ Bài Tương Ứng</h2>
+        <div id="gameArea">
+          <p id="monsterCard">Quái vật đang xuất hiện...</p>
+          <div class="card-options" id="cardOptions"></div>
+          <p id="result"></p>
+          <button id="startGame">Bắt đầu</button>
+        </div>
+      </section>
+    </div>
 
-    <section class="tower-category">
-      <h2>Lính Xuyên Giáp</h2>
-      <div class="tower-grid">
-        <div><img src="../img_tower/Accelerator.png"><p>Accelerator</p></div>
-        <div><img src="../img_tower/EngineerIcon.png"><p>Engineer</p></div>
-        <div><img src="../img_tower/Ranger.png"><p>Ranger</p></div>
-      </div>
-    </section>
-
-    <section class="tower-category">
-      <h2>Lính Khống Chế</h2>
-      <div class="tower-grid">
-        <div><img src="../img_tower/Freezer.png"><p>Freezer</p></div>
-        <div><img src="../img_tower/Electroshocker.png"><p>Electroshocker</p></div>
-        <div><img src="../img_tower/ToxicGIcon.png"><p>Toxic Gunner</p></div>
-      </div>
-    </section>
-
-    <section class="tower-category">
-      <h2>Lính Hỗ Trợ</h2>
-      <div class="tower-grid">
-        <div><img src="../img_tower/Medic.png"><p>Medic</p></div>
-        <div><img src="../img_tower/DJ Booth.png"><p>DJ Booth</p></div>
-        <div><img src="../img_tower/Commander.png"><p>Commander</p></div>
-      </div>
-    </section>
-
-    <section id="game">
-      <h2>Mini Game: Tìm Thẻ Bài Tương Ứng</h2>
-      <div id="gameArea">
-        <p id="monsterCard">Quái vật đang xuất hiện...</p>
-        <div class="card-options" id="cardOptions"></div>
-        <p id="result"></p>
-        <button onclick="startGame()">Bắt đầu</button>
-      </div>
-    </section>
-  </div>
-
-  <script src="../js/tower.js"></script>
-  <script src="../js/home-login.js"></script>
-</body>
+    <script src="../js/tower.js"></script>
+    <script src="../js/game.js"></script>
+    <script src="../js/nav.js"></script>
+  </body>
 </html>

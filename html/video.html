@@ -1,45 +1,49 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tìm kiếm Video YouTube</title>
 
-    <link rel="stylesheet" href="../css/video.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../css/tuy_chinh.css" />
+    <link rel="stylesheet" href="../css/video.css" />
+  </head>
+  <body>
     <nav>
-        <ul class="nut_an">
-            <li><a href="../index.html">HOME</a></li>
-            <li><a href="video.html">VIDEO</a></li>
-            <li><a href="event.html">EVENT</a></li>
-            <li><a href="tower.html">TOWER</a></li>
-            <li><a href="monster.html">MONSTER</a></li>
-            <li><a href="../html/comment.html">COMMENT</a></li> 
-            <li><button id="nut-dang-nhap">ĐĂNG NHẬP</button></li> <!-- đưa nút vào đây -->
-          </ul>
-           
-    
-        </nav> 
-        <h1>Tìm kiếm Video YouTube</h1>
-    
+      <ul class="nut_an">
+        <li><a id="nav-home" href="#">HOME</a></li>
+        <li><a id="nav-video" href="#">VIDEO</a></li>
+        <li><a id="nav-event" href="#">EVENT</a></li>
+        <li><a id="nav-tower" href="#">TOWER</a></li>
+        <li><a id="nav-monster" href="#">MONSTER</a></li>
+        <li><a id="nav-comment" href="#">COMMENT</a></li>
+        <li><button id="nut-dang-nhap">ĐĂNG NHẬP</button></li>
+      </ul>
+    </nav>
+
+    <h1>Tìm kiếm Video YouTube</h1>
+
     <main>
-        <div class="search-container">
-            <input type="text" id="searchInput" placeholder="Nhập từ khóa tìm kiếm...">
-            <button id="searchButton">Tìm kiếm</button>
-        </div>
-        <div id="videoList"></div>
-        <div>
-            <button id="prevButton">Trước</button>
-            <button id="nextButton">Sau</button>
-        </div>
+      <div class="search-container">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Nhập từ khóa tìm kiếm..."
+        />
+        <button id="searchButton">Tìm kiếm</button>
+      </div>
+      <div id="videoList"></div>
+      <div>
+        <button id="prevButton">Trước</button>
+        <button id="nextButton">Sau</button>
+      </div>
     </main>
-    
+
     <footer>
-        <!-- Thêm nội dung footer -->
+      <!-- Thêm nội dung footer -->
     </footer>
-    
+
     <script src="../js/video.js"></script>
-    <script src="../js/home-login.js"></script>
-</body>
+    <script src="../js/nav.js"></script>
+  </body>
 </html>

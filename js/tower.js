@@ -1,76 +1,71 @@
-const monsterTypes = [
-    { name: "Quái vật bay", counter: "Lính Đánh Trên Trời" },
-    { name: "Quái vật tàng hình", counter: "Lính Tàng Hình" },
-    { name: "Quái vật giáp dày", counter: "Lính Xuyên Giáp" },
-    { name: "Quái vật chạy nhanh", counter: "Lính Khống Chế" },
-    { name: "Quái vật gây choáng", counter: "Lính Hỗ Trợ" },
-  ];
-  
-  const towers = [
-    { name: "Pursuit", type: "Lính Đánh Trên Trời", img: "../img_tower/Pursuit.png" },
-    { name: "Ace Pilot", type: "Lính Đánh Trên Trời", img: "../img_tower/Ace Pilot.png" },
-    { name: "Militant", type: "Lính Đánh Trên Trời", img: "../img_tower/Militant.png" },
-    { name: "Warden", type: "Lính Tàng Hình", img: "../img_tower/Warden.png" },
-    { name: "Golden Scout", type: "Lính Tàng Hình", img: "../img_tower/Golden Scout.png" },
-    { name: "Minigunner", type: "Lính Tàng Hình", img: "../img_tower/Minigunner.png" },
-    { name: "Accelerator", type: "Lính Xuyên Giáp", img: "../img_tower/Accelerator.png" },
-    { name: "Engineer", type: "Lính Xuyên Giáp", img: "../img_tower/EngineerIcon.png" },
-    { name: "Ranger", type: "Lính Xuyên Giáp", img: "../img_tower/Ranger.png" },
-    { name: "Freezer", type: "Lính Khống Chế", img: "../img_tower/Freezer.png" },
-    { name: "Electroshocker", type: "Lính Khống Chế", img: "../img_tower/Electroshocker.png" },
-    { name: "Toxic Gunner", type: "Lính Khống Chế", img: "../img_tower/ToxicGIcon.png" },
-    { name: "Medic", type: "Lính Hỗ Trợ", img: "../img_tower/Medic.png" },
-    { name: "DJ Booth", type: "Lính Hỗ Trợ", img: "../img_tower/DJ Booth.png" },
-    { name: "Commander", type: "Lính Hỗ Trợ", img: "../img_tower/Commander.png" },
-  ];
-  
-  let currentMonster;
-  
-  function startGame() {
-    document.getElementById("result").innerText = "";
-    currentMonster = monsterTypes[Math.floor(Math.random() * monsterTypes.length)];
-    document.getElementById("monsterCard").innerText = `Thẻ bài: ${currentMonster.name}`;
-    renderOptions();
+// kiem tra xem dang o tower hay monster
+let jsonPath = "../data/";
+if (location.pathname.includes("tower.html")) {
+  jsonPath += "towers.json";
+} else if (location.pathname.includes("monster.html")) {
+  jsonPath += "units.json";
+}
+
+async function loadSectionData() {
+  const response = await fetch(jsonPath);
+  if (!response.ok) {
+    throw new Error("Network response was not ok");
   }
-  
-  function renderOptions() {
-    const container = document.getElementById("cardOptions");
-    container.innerHTML = "";
-  
-    const validTowers = towers.filter(t => t.type === currentMonster.counter);
-    const randomValid = validTowers[Math.floor(Math.random() * validTowers.length)];
-  
-    const shuffledWrong = towers
-      .filter(t => t.name !== randomValid.name)
-      .sort(() => Math.random() - 0.5)
-      .slice(0, 5);
-  
-    const finalOptions = [...shuffledWrong, randomValid].sort(() => Math.random() - 0.5);
-  
-    finalOptions.forEach(tower => {
-      const card = document.createElement("div");
-      card.className = "tower-card";
-      card.onclick = () => checkAnswer(tower);
-  
-      const img = document.createElement("img");
-      img.src = tower.img;
-      img.alt = tower.name;
-  
-      const label = document.createElement("p");
-      label.innerHTML = `<strong>${tower.name}</strong>`;
-  
-      card.appendChild(img);
-      card.appendChild(label);
-      container.appendChild(card);
-    });
-  }
-  
-  function checkAnswer(tower) {
-    if (tower.type === currentMonster.counter) {
-      document.getElementById("result").innerHTML = "✅ Chính xác! Tower này khắc chế được quái vật.";
-    } else {
-      document.getElementById("result").innerHTML =
-        `❌ Sai rồi! Tower này không hiệu quả.<br>→ Gợi ý: Dùng <strong>${currentMonster.counter}</strong>`;
-    }
-  }
-  
+  const data = await response.json();
+  return data;
+}
+
+function createItemCard(item) {
+  const card = document.createElement("div");
+
+  const img = document.createElement("img");
+  img.src = item.img; // Set image source
+  img.alt = item.name; // Set alt text for image
+
+  const p = document.createElement("p");
+  p.textContent = item.name; // Set text content for the paragraph
+
+  card.appendChild(img); // Append image to div
+  card.appendChild(p); // Append paragraph to div
+
+  return card;
+}
+
+function createSectionCard(sectionObj) {
+  // Assuming you already have the category name and tower data
+  const categoryName = sectionObj.name; // Example category name
+
+  // Create the section for the category
+  const section = document.createElement("section");
+  section.classList.add("tower-category");
+
+  // Create the heading for the category
+  const h2 = document.createElement("h2");
+  h2.textContent = categoryName;
+
+  // Create the container for the tower cards
+  const towerGrid = document.createElement("div");
+  towerGrid.classList.add("tower-grid");
+
+  // Loop through towers and create cards
+  sectionObj.items?.forEach((item) => {
+    towerGrid.appendChild(createItemCard(item));
+  });
+
+  // Append heading and grid to the section
+  section.appendChild(h2);
+  section.appendChild(towerGrid);
+
+  // Append the section to a parent element in the DOM (e.g., body or a specific div)
+  return section;
+}
+
+document.addEventListener("DOMContentLoaded", async () => {
+  const sectionData = await loadSectionData();
+
+  const container = document.getElementById("sections");
+  sectionData.forEach((section) => {
+    const sectionCard = createSectionCard(section);
+    container.appendChild(sectionCard);
+  });
+});
