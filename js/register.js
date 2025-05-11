@@ -41,8 +41,8 @@ document.addEventListener("DOMContentLoaded", () => {
       const auth = getAuth(firebaseapp);
       await createUserWithEmailAndPassword(auth, email, password);
 
-      alert("Đăng ký thành công! Bạn có thể đăng nhập.");
-      location.href = "./login.html";
+      alert("Đăng ký thành công!");
+      location.href = "index.html";
     } catch (err) {
       console.error(err);
       errorMessage.textContent = "Email đã được sử dụng hoặc có lỗi xảy ra!";
